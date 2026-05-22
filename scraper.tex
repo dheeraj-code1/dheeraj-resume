@@ -1,0 +1,293 @@
+%%%%
+% MTecknology's Resume
+%%%%
+% Author: Michael Lustfield
+% License: CC-BY-4
+% - https://creativecommons.org/licenses/by/4.0/legalcode.txt
+%%%%
+
+\documentclass[letterpaper,6pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%
+%% BEGIN_FILE: mteck.sty
+%% NOTE: Everything between here and END_FILE can
+%% be relocated to "mteck.sty" and then included with:
+%\usepackage{mteck}
+
+% Dependencies
+% NOTE: Some packages (lastpage, hyperref) require second build!
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{bookmark}
+\usepackage{lastpage}
+
+% Sans-Serif
+%\usepackage[sfdefault]{FiraSans}
+%\usepackage[sfdefault]{roboto}
+%\usepackage[sfdefault]{noto-sans}
+%\usepackage[default]{sourcesanspro}
+
+% Serif
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+
+% Colors
+% Use with \color{Name}
+% Can wrap entire heading with {\color{accent} [...] }
+\usepackage{xcolor}
+\definecolor{accentTitle}{HTML}{0e6e55}
+\definecolor{accentText}{HTML}{0e6e55}
+\definecolor{accentLine}{HTML}{a16f0b}
+
+% Misc. Options
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+
+% Adjust Margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.11in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.0in}
+
+\setlength{\multicolsep}{-4.0pt}
+\setlength{\columnsep}{-2pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\footskip}{3.0pt}
+\raggedbottom
+\raggedright
+
+% ATS Readability
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+%-----------------%
+% Custom Commands %
+%-----------------%
+
+% Centered title along with subtitle between HR
+% Usage: \documentTitle{Name}{Details}
+\newcommand{\documentTitle}[2]{
+  \begin{center}
+    {\Huge\color{accentTitle} #1}
+    \vspace{2pt}
+    {\color{accentLine} \hrule}
+    \vspace{7pt}
+    %{\footnotesize\color{accentTitle} #2}
+    \footnotesize{#2}
+    \vspace{1pt}
+    {\color{accentLine} \hrule}
+  \end{center}
+}
+
+% Create a footer with correct padding
+% Usage: \documentFooter{\thepage of X}
+\newcommand{\documentFooter}[1]{
+  \setlength{\footskip}{10.25pt}
+  \fancyfoot[C]{\footnotesize #1}
+}
+
+% Simple wrapper to set up page numbering
+% Usage: \numberedPages
+% WARNING: Must run pdflatex twice!
+\newcommand{\numberedPages}{
+  \documentFooter{\thepage/\pageref{LastPage}}
+}
+
+% Section heading with horizontal rule
+% Usage: \section{Title}
+\titleformat{\section}{
+  \vspace{-15pt}
+  \color{accentText}
+  \raggedright\large\bfseries
+}{}{0em}{}[\color{accentLine}\titlerule]
+
+% Section heading with separator and content on same line
+% Usage: \tinysection{Title}
+\newcommand{\tinysection}[1]{
+  \phantomsection
+  \addcontentsline{toc}{section}{#1}
+  {\large{\bfseries\color{accentText}#1} {\color{accentLine} |}}
+}
+
+% Indented line with arguments left/right aligned in document
+% Usage: \heading{Left}{Right}
+\newcommand{\heading}[2]{
+  \hspace{10pt}#1\hfill#2\\
+}
+
+% Adds \textbf to \heading
+\newcommand{\headingBf}[2]{
+  \heading{\textbf{#1}}{\textbf{#2}}
+}
+
+% Adds \textit to \heading
+\newcommand{\headingIt}[2]{
+  \heading{\textit{#1}}{\textit{#2}}
+}
+
+% Template for itemized lists
+% Usage: \begin{resume_list} [items] \end{resume_list}
+\newenvironment{resume_list}{
+  \vspace{-8pt}
+  \begin{itemize}[itemsep=-2px, parsep=1pt, leftmargin=30pt]
+}{
+  \end{itemize}
+  %\vspace{-2pt}
+}
+
+% Formats an item to use as an itemized title
+% Usage: \itemTitle{Title}
+\newcommand{\itemTitle}[1]{
+  \item[] \underline{#1}\vspace{1pt}
+}
+
+% Bullets used in itemized lists
+\renewcommand\labelitemi{--}
+
+%% END_FILE: mteck.sty
+%%%%%%%%%%%%%%%%%%%%%%
+
+
+%=========================%
+% Dheeraj Baghel's Resume %
+%=========================%
+
+\begin{document}
+
+  %---------%
+  % Heading %
+  %---------%
+
+  \documentTitle{Dheeraj Baghel}{
+    \href{tel:7037117999}{
+      \raisebox{-0.05\height} \faPhone\ 7037117999} ~ | ~
+    \href{mailto:dheeraj25062003@gmail.com}{
+      \raisebox{-0.15\height} \faEnvelope\ dheeraj25062003@gmail.com} ~ | ~
+    \href{https://www.linkedin.com/in/dheeraj-baghel-51b568209/}{
+      \raisebox{-0.15\height} \faLinkedin\ LinkedIn}
+  }
+
+  %----------%
+  % Summary  %
+  %----------%
+
+\vspace{-0.6em}
+\section*{Summary}
+\vspace{-0.6em}
+
+\noindent Backend and Data Engineer with hands-on experience in Python, PySpark, and AWS/GCP, specializing in distributed scraping systems, ETL pipelines, and scalable backend APIs. Proficient in Apache Kafka, Airflow, FastAPI, and LLM application development using LangChain and LangGraph.
+\vspace{1pt}
+{\color{accentLine} \hrule}
+
+  %--------%
+  % Skills %
+  %--------%
+
+  \section{Technical Skills}
+\vspace{-0.4em}
+  \begin{itemize}[itemsep=-2px, parsep=1pt, leftmargin=120pt, labelwidth=115pt, align=left]
+    \item[\textbf{Languages}] Python, SQL, JavaScript, C/C++
+    \item[\textbf{Frameworks}] FastAPI, Flask, PySpark, Pandas, Scrapy, BeautifulSoup, LangChain, LangGraph, LangSmith
+    \item[\textbf{Cloud}] AWS (EC2, S3, Lambda, Kinesis, Glue, ECS, Redshift), GCP (BigQuery, GCS, Dataflow, Cloud Run, Pub/Sub)
+    \item[\textbf{Data \& Orchestration}] Apache Kafka, Apache Airflow, Apache Hive, Hadoop, Databricks
+    \item[\textbf{Tools \& OS}] Docker, Git, Charles Proxy, Frida, HTTP Toolkit, Playwright, Linux
+  \end{itemize}
+
+  %------------%
+  % Experience %
+  %------------%
+
+  \section{Experience}
+\vspace{-0.7em}
+
+  \headingBf{MfilterIt}{Feb 2025 -- Present}
+    \vspace{-0.2em}
+  \headingIt{Software Development Engineer}{}
+  \vspace{-0.2em}
+  \begin{resume_list}
+    \item Design and operate scalable web and mobile application scraping systems, including Android app reverse engineering using Frida, Charles Proxy, and HTTP Toolkit on Android emulators.
+    \item Build and maintain PySpark-based ETL pipelines processing high-volume scraped data across AWS (Lambda, S3, ECS, Kinesis) and GCP (BigQuery, GCS) for serverless and containerized workloads.
+    \item Develop and expose backend REST APIs using FastAPI and Flask to serve processed data to downstream consumers.
+  \end{resume_list}
+
+\vspace{-0.7em}
+  \headingBf{Six Dee Netad Solutions Pvt Ltd}{April 2024 -- August 2024}
+    \vspace{-0.2em}
+  \headingIt{R\&D Trainee}{}
+  \vspace{-0.2em}
+  \begin{resume_list}
+    \item Built an automation tool to detect and block fraudulent IP traffic in Bing Ads campaigns, reducing manual monitoring efforts by \textbf{70\%} and improving invalid traffic (IVT) prevention accuracy.
+    \item Automated campaign performance report generation and distribution using Python and Pandas, streamlining analytics workflows.
+  \end{resume_list}
+
+\vspace{-0.2em}
+  \headingBf{DEI Summer Research Fellowship}{June 2023 -- November 2023}
+    \vspace{-0.2em}
+  \headingIt{Research Intern}{}
+  \vspace{-0.2em}
+  \begin{resume_list}
+    \item Optimized disaster relief vehicle routing using Genetic Algorithms and K-means clustering, achieving measurable gains in solution quality and computational efficiency for TSP-class problems.
+  \end{resume_list}
+
+  %----------%
+  % Projects %
+  %----------%
+
+  \section{Projects}
+\vspace{-0.6em}
+
+  \headingBf{E-Commerce Data Intelligence Pipeline}{June 2025 -- Present}
+    \vspace{-0.2em}
+  \headingIt{MfilterIt $|$ Software Development Engineer}{}
+  \vspace{-0.1em}
+  \begin{resume_list}
+    \item Built distributed scrapers on \textbf{AWS Lambda} and \textbf{EC2} processing \textbf{20M+ URLs in under 4 hours} across Blinkit, Zepto, Instamart, Flipkart, Amazon, and Noon; reverse-engineered mobile app APIs using \textbf{Frida}, \textbf{Charles Proxy}, and \textbf{HTTP Toolkit}.
+    \item Designed a \textbf{Kafka}-based streaming layer where Lambda scrapers publish raw records; a batch consumer aggregates \textbf{5,000--7,000 IDs} per cycle and upserts deduplicated records into the database using fault-tolerant merge logic with retry handling.
+    \item Built a multi-stage \textbf{PySpark} ETL pipeline --- raw $\rightarrow$ cleaned (validation, null-handling, deduplication) $\rightarrow$ staging $\rightarrow$ transformed --- computing ecommerce KPIs including price trends, stock velocity, and discount rates across \textbf{20M+ daily records}.
+    \item Merged transformed ecommerce data with campaign datasets to surface performance insights; exposed aggregated metrics and campaign analytics to client teams via a \textbf{FastAPI} dashboard with role-based access control.
+  \end{resume_list}
+  \vspace{-0.6em}
+
+  \headingBf{Weapon-Target Assignment Optimization}{October 2024 -- May 2025}
+    \vspace{-0.25em}
+  \headingIt{DayalBagh Educational Institute, Agra}{}
+  \vspace{-0.0em}
+  \begin{resume_list}
+    \item Developed a metaheuristic optimization framework for the Static Weapon-Target Assignment Problem (SWTAP) using a Biased Random-Key Genetic Algorithm (BRKGA) with tailored crossover and mutation operators, achieving computationally efficient constraint satisfaction in C/C++.
+  \end{resume_list}
+  \vspace{-0.4em}
+
+  %--------------%
+  % Publications %
+  %--------------%
+
+  \section{Publications}
+  \begin{resume_list}
+    \item ``The Mobile Healthcare Vehicle Traveling Salesman Problem with Constant Budget Constraint: Heuristics and Hybrid Evolutionary Algorithms'' --- under review, \textit{Journal of the Institution of Engineers (India) Series B}, Springer.
+  \end{resume_list}
+
+  %-----------%
+  % Education %
+  %-----------%
+
+\section{Education}
+\vspace{-0.9em}
+  \headingBf{DayalBagh Educational Institute, Agra}{2021--2025}
+  \headingIt{B.Tech in Electrical Engineering, Specialization: Computer Science}{8.8 CGPA (Top 10\%)}
+  \vspace{0.2pt}
+  \headingBf{REI Intermediate College, Agra}{2020--2021}
+  \headingIt{Senior Secondary (PCM)}{97.2\%}
+  \vspace{0.5pt}
+  \headingBf{REI Intermediate College, Agra}{2018--2019}
+  \headingIt{High School}{95.5\%}
+
+\end{document}

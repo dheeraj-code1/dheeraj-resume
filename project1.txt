@@ -1,0 +1,59 @@
+============================================================
+PROJECT 1
+============================================================
+
+Project Title   : E-Commerce Data Intelligence Pipeline
+                  (also referred to as: Distributed Data Extractor / Scrapers)
+
+Client          : MfilterIt
+
+Role            : Software Development Engineer
+
+Project Status  : In Progress
+
+Worked From     : June 2025 -- Present
+
+------------------------------------------------------------
+Details of Project:
+------------------------------------------------------------
+
+- Built distributed scrapers using AWS Lambda and EC2 capable of
+  scraping 20M+ URLs in under 4 hours across Blinkit, Zepto,
+  Instamart, Flipkart, Amazon, Careem Quick, and Noon Minutes, etc.
+
+- Reverse-engineered mobile app and web APIs using Charles Proxy,
+  Frida, HTTP Toolkit, and Android emulators; developed high-performance
+  extractors with Requests and BeautifulSoup.
+
+- Designed a Kafka-based streaming layer where Lambda scrapers publish
+  raw records; a batch consumer aggregates 5,000–7,000 IDs per cycle
+  and upserts deduplicated records into the database using fault-tolerant
+  merge logic with retry handling.
+
+- Engineered fault-tolerant ETL pipelines using Python and PySpark with
+  intelligent proxy rotation, retry handling, and rate-limiting strategies,
+  achieving 99%+ scrape success rate.
+
+- Built a multi-stage PySpark ETL pipeline:
+    raw -> cleaned (validation, null-handling, deduplication)
+        -> staging -> transformed
+  computing ecommerce KPIs including price trends, stock velocity,
+  and discount rates across 20M+ daily records.
+
+- Merged transformed ecommerce data with campaign datasets to surface
+  performance insights; exposed aggregated metrics and campaign analytics
+  to client teams via a FastAPI dashboard with role-based access control.
+
+------------------------------------------------------------
+Skills / Keywords Used:
+------------------------------------------------------------
+
+Languages       : Python, SQL
+Frameworks      : PySpark, FastAPI, Flask, BeautifulSoup, Scrapy, Requests
+Cloud           : AWS (Lambda, EC2, S3, ECS, Kinesis), GCP (BigQuery, GCS)
+Streaming       : Apache Kafka
+Reverse Engg.   : Frida, Charles Proxy, HTTP Toolkit, Android Emulators
+Concepts        : ETL Pipelines, Proxy Rotation, API Reverse Engineering,
+                  Distributed Scraping, Deduplication, Rate Limiting,
+                  Role-Based Access Control (RBAC)
+============================================================
