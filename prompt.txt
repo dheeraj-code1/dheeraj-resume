@@ -1,0 +1,12 @@
+PROMPT1: here is my resume. Pretend you are a senior hiring manager at a top company in Software engineering. tell me honestly what's weak, what's missing, and what would make you reject this resume immediately.
+
+
+PROMPT2: Here is a job description I'm applying for. Compare it with my resume and tell me exactly which keywords are missing, which skills I should highlight more, and how I should restructure my bullet points to pass ATS screening
+
+PROMPT3: Rewrite each of my bullet points using the formula: Action Verb plus Task plus Measurable Result. If I haven't given you numbers, ask me questions to help me find them
+
+PROMPT4: Based on the tone, language, and values of companies like [Company A, Company B] in [your industry], rewrite my resume summary and skills section so it sounds like I belong in this industry not like a generic applicant.
+
+PROMPT5: Do a final review of my resume. Check for: consistency in tense, any clichés or overused phrases like 'team player' or 'hardworking', anything that sounds generic or could apply to anyone. Replace all of it with specific, powerful language.
+
+PROMPT6: You have my resume @scraper.tex  and you have naukri'profile sections, now  I Want you to now rewrite your headline and summary with Naukri's ranking algorithm specifically in mind — optimizing keyword placement and structure for how recruiters actually search
