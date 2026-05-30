@@ -6,7 +6,7 @@
 % - https://creativecommons.org/licenses/by/4.0/legalcode.txt
 %%%%
 
-\documentclass[letterpaper,6pt]{article}
+\documentclass[letterpaper,9pt]{article}
 %%%%%%%%%%%%%%%%%%%%%%%
 %% BEGIN_FILE: mteck.sty
 %% NOTE: Everything between here and END_FILE can
@@ -52,14 +52,14 @@
 \urlstyle{same}
 
 % Adjust Margins
-\addtolength{\oddsidemargin}{-0.7in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.11in}
-\addtolength{\topmargin}{-0.7in}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.4in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.6in}
 \addtolength{\textheight}{1.0in}
 
-\setlength{\multicolsep}{-4.0pt}
-\setlength{\columnsep}{-2pt}
+\setlength{\multicolsep}{0pt}
+\setlength{\columnsep}{0pt}
 \setlength{\tabcolsep}{0pt}
 \setlength{\footskip}{3.0pt}
 \raggedbottom
@@ -105,7 +105,7 @@
 % Section heading with horizontal rule
 % Usage: \section{Title}
 \titleformat{\section}{
-  \vspace{-15pt}
+  \vspace{-10pt}
   \color{accentText}
   \raggedright\large\bfseries
 }{}{0em}{}[\color{accentLine}\titlerule]
@@ -137,11 +137,11 @@
 % Template for itemized lists
 % Usage: \begin{resume_list} [items] \end{resume_list}
 \newenvironment{resume_list}{
-  \vspace{-8pt}
-  \begin{itemize}[itemsep=-2px, parsep=1pt, leftmargin=30pt]
+  \vspace{-5pt}
+  \begin{itemize}[itemsep=0px, parsep=1pt, leftmargin=30pt]
 }{
   \end{itemize}
-  %\vspace{-2pt}
+  \vspace{-4pt}
 }
 
 % Formats an item to use as an itemized title
@@ -174,18 +174,18 @@
       \raisebox{-0.15\height} \faEnvelope\ dheeraj25062003@gmail.com} ~ | ~
     \href{https://www.linkedin.com/in/dheeraj-baghel-51b568209/}{
       \raisebox{-0.15\height} \faLinkedin\ linkedin.com/in/dheeraj-baghel} ~ | ~
-    \href{https://github.com/YOUR-GITHUB-USERNAME}{
-      \raisebox{-0.15\height} \faGithub\ github.com/YOUR-GITHUB-USERNAME} ~ | ~
-    \raisebox{-0.05\height} \faMapMarker\ Agra, India
+    \href{https://github.com/dheeraj-code1}{
+      \raisebox{-0.15\height} \faGithub\ github.com/dheeraj-code1} ~ | ~
+    \raisebox{-0.05\height} \faMapMarker\ Noida, India
   }
 
   %----------%
   % Summary  %
   %----------%
 
-\vspace{-0.6em}
+\vspace{-0.4em}
 \section*{Summary}
-\vspace{-0.6em}
+\vspace{-0.3em}
 
 \noindent SDE specializing in high-throughput data systems — distributed scraping infrastructure processing \textbf{20M+ URLs/day}, Kafka-driven multi-stage ETL pipelines across AWS and GCP, and cloud-native backend APIs. Experienced in mobile API reverse engineering (Frida, Charles Proxy) for large-scale multi-platform data extraction.
 \vspace{1pt}
@@ -196,7 +196,7 @@
   %--------%
 
   \section{Technical Skills}
-\vspace{-0.4em}
+\vspace{-0.3em}
   \begin{itemize}[itemsep=-2px, parsep=1pt, leftmargin=120pt, labelwidth=115pt, align=left]
     \item[\textbf{Languages}] Python, SQL, C/C++
     \item[\textbf{Frameworks}] FastAPI, Flask, PySpark, Pandas, Scrapy, BeautifulSoup, LangChain, LangGraph, LangSmith
@@ -210,7 +210,7 @@
   %------------%
 
   \section{Experience}
-\vspace{-0.7em}
+\vspace{-0.4em}
 
   \headingBf{MfilterIt {\normalfont\small--- Ad-tech \& E-commerce Data Intelligence}}{Feb 2025 -- Present}
     \vspace{-0.2em}
@@ -221,8 +221,7 @@
     \item Build and maintain PySpark-based ETL pipelines processing \textbf{20M+ records daily} across AWS (Lambda, S3, ECS, Kinesis) and GCP (BigQuery, GCS), cutting pipeline execution time by \textbf{35\%}.
     \item Develop and expose backend REST APIs using FastAPI and Flask serving processed data to \textbf{5+ downstream client teams}, achieving sub-200ms average response latency.
   \end{resume_list}
-
-\vspace{-0.7em}
+\vspace{-0.2em}
   \headingBf{Six Dee Netad Solutions Pvt Ltd}{April 2024 -- August 2024}
     \vspace{-0.2em}
   \headingIt{R\&D Trainee}{}
@@ -231,43 +230,46 @@
     \item Built an automation tool to detect and block fraudulent IP traffic in Bing Ads campaigns, reducing manual monitoring efforts by \textbf{70\%} and improving invalid traffic (IVT) prevention accuracy.
     \item Automated campaign performance report generation and distribution using Python and Pandas, streamlining analytics workflows.
   \end{resume_list}
-
 \vspace{-0.2em}
-  \headingBf{DayalBagh Educational Institute --- Summer Research Fellowship}{June 2023 -- November 2023}
-    \vspace{-0.2em}
-  \headingIt{Research Intern}{}
-  \vspace{-0.2em}
-  \begin{resume_list}
-    \item Optimized disaster relief vehicle routing using Genetic Algorithms and K-means clustering, reducing average routing distance by \textbf{18\%} and improving computational efficiency by \textbf{3$\times$} over baseline heuristics for TSP-class problems.
-  \end{resume_list}
-
+  % \headingBf{DayalBagh Educational Institute --- Summer Research Fellowship}{June 2023 -- November 2023}
+  %   \vspace{-0.2em}
+  % \headingIt{Research Intern}{}
+  % \vspace{-0.2em}
+  % \begin{resume_list}
+  %   \item Optimized disaster relief vehicle routing using Genetic Algorithms and K-means clustering, reducing average routing distance by \textbf{18\%} and improving computational efficiency by \textbf{3$\times$} over baseline heuristics for TSP-class problems.
+  % \end{resume_list}
   %----------%
   % Projects %
   %----------%
 
   \section{Projects}
-\vspace{-0.6em}
+\vspace{-0.4em}
 
-  \headingBf{E-Commerce Data Intelligence Pipeline}{June 2025 -- Present}
+  % \headingBf{E-Commerce Data Intelligence Pipeline}{June 2025 -- Present}
+  %   \vspace{-0.2em}
+  % \headingIt{Python, PySpark, Kafka, FastAPI, AWS Lambda/EC2, GCP $|$ MfilterIt}{}
+  % \vspace{-0.1em}
+  % \begin{resume_list}
+  %   \item Architected distributed scrapers on \textbf{AWS Lambda} and \textbf{EC2} processing \textbf{20M+ URLs in under 4 hours} across Blinkit, Zepto, Instamart, Flipkart, Amazon, and Noon; reverse-engineered Android app APIs using \textbf{Frida}, \textbf{Charles Proxy}, and \textbf{HTTP Toolkit} with fault-tolerant proxy rotation achieving \textbf{99\%+ scrape success}.
+  %   \item Designed a \textbf{Kafka} streaming layer where Lambda scrapers publish raw records; a batch consumer aggregates \textbf{5,000--7,000 IDs/cycle} with fault-tolerant upsert and deduplication logic; built a multi-stage \textbf{PySpark} ETL: raw $\rightarrow$ cleaned $\rightarrow$ staging $\rightarrow$ transformed, computing price trends, stock velocity, and discount rate KPIs.
+  % \end{resume_list}
+\vspace{0.1em}
+  \headingBf{E-Commerce Availability Analytics ETL Pipeline}{Mar 2025 -- Present}
     \vspace{-0.2em}
-  \headingIt{Python, PySpark, Kafka, FastAPI, AWS Lambda/EC2, GCP $|$ MfilterIt}{}
+  \headingIt{PySpark, GCS (Parquet), MySQL, Docker $|$ MfilterIt}{}
   \vspace{-0.1em}
   \begin{resume_list}
-    \item Architected distributed scrapers on \textbf{AWS Lambda} and \textbf{EC2} processing \textbf{20M+ URLs in under 4 hours} across Blinkit, Zepto, Instamart, Flipkart, Amazon, and Noon; reverse-engineered Android app APIs using \textbf{Frida}, \textbf{Charles Proxy}, and \textbf{HTTP Toolkit} with fault-tolerant proxy rotation achieving \textbf{99\%+ scrape success}.
-    \item Designed a \textbf{Kafka} streaming layer where Lambda scrapers publish raw records; a batch consumer aggregates \textbf{5,000--7,000 IDs/cycle} with fault-tolerant upsert and deduplication logic; built a multi-stage \textbf{PySpark} ETL: raw $\rightarrow$ cleaned $\rightarrow$ staging $\rightarrow$ transformed, computing price trends, stock velocity, and discount rate KPIs.
-    \item Merged e-commerce and campaign datasets to surface performance insights; exposed aggregated metrics via a \textbf{FastAPI} dashboard with role-based access control (\textbf{RBAC}) serving \textbf{5+ client teams}.
+    \item Built a \textbf{PySpark} ETL pipeline ingesting \textbf{180 days} of product availability Parquet files from \textbf{Google Cloud Storage} and live MySQL staging records via JDBC; enriched datasets with OEM code, city, and product-title mapping joins per brand.
+    \item Computed \textbf{8 analytical metrics} (OOS rate, competitor availability gap, dark store listing gaps, per-SKU trends) across \textbf{4 rolling time windows} (daily / 7d / 30d / 90d) for multiple brands, containerized with \textbf{Docker} for reproducible, environment-agnostic deployments.
   \end{resume_list}
-  \vspace{-0.6em}
-
+\vspace{-0.2em}
   \headingBf{Weapon-Target Assignment Optimization}{October 2024 -- May 2025}
-    \vspace{-0.25em}
+    \vspace{-0.2em}
   \headingIt{DayalBagh Educational Institute, Agra}{}
-  \vspace{-0.0em}
+  \vspace{-0.1em}
   \begin{resume_list}
     \item Engineered a \textbf{C/C++} optimization framework for an NP-hard large-scale combinatorial assignment problem; designed custom crossover and mutation operators within a Genetic Algorithm (BRKGA) achieving measurable gains in solution quality and \textbf{3$\times$} runtime efficiency over baseline heuristics, with focus on performance-critical data structure design.
   \end{resume_list}
-  \vspace{-0.4em}
-
   %--------------%
   % Publications %
   %--------------%
@@ -282,14 +284,8 @@
   %-----------%
 
 \section{Education}
-\vspace{-0.9em}
+\vspace{-0.5em}
   \headingBf{DayalBagh Educational Institute, Agra}{2021--2025}
   \headingIt{B.Tech in Electrical Engineering, Specialization: Computer Science}{8.8 CGPA (Top 10\%)}
-  \vspace{0.2pt}
-  \headingBf{REI Intermediate College, Agra}{2020--2021}
-  \headingIt{Senior Secondary (PCM)}{97.2\%}
-  \vspace{0.5pt}
-  \headingBf{REI Intermediate College, Agra}{2018--2019}
-  \headingIt{High School}{95.5\%}
 
 \end{document}

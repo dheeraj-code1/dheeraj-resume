@@ -10,3 +10,6 @@ PROMPT4: Based on the tone, language, and values of companies like [Company A, C
 PROMPT5: Do a final review of my resume. Check for: consistency in tense, any clichés or overused phrases like 'team player' or 'hardworking', anything that sounds generic or could apply to anyone. Replace all of it with specific, powerful language.
 
 PROMPT6: You have my resume @scraper.tex  and you have naukri'profile sections, now  I Want you to now rewrite your headline and summary with Naukri's ranking algorithm specifically in mind — optimizing keyword placement and structure for how recruiters actually search
+
+
+PROMPT7: Here is my naukri' headline and profile summary. You already know for naukri algorithm i need to refresh it everyday. So I Want you to now rewrite your headline and summary with Naukri's ranking algorithm specifically in mind — optimizing keyword placement and structure for how recruiters actually search, if it is already algin with our goals then twik small relevent changes. 
