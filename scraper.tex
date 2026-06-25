@@ -187,7 +187,7 @@
 \section*{Summary}
 \vspace{-0.3em}
 
-\noindent SDE specializing in high-throughput data systems and LLM-powered pipelines — distributed scraping infrastructure processing \textbf{20M+ URLs/day}, Kafka-driven multi-stage ETL across AWS and GCP, and end-to-end AI pipelines combining local ASR, map-reduce summarization, and RAG-based Q\&A. Experienced in mobile API reverse engineering (Frida, Charles Proxy) and multi-LLM orchestration (Groq, Mistral, LangChain).
+\noindent SDE specializing in high-throughput data systems and LLM-powered pipelines — distributed scraping infrastructure processing \textbf{20M+ URLs/day}, Kafka-driven multi-stage ETL across AWS and GCP, and end-to-end AI pipelines combining local ASR, map-reduce summarization, and RAG-based Q\&A. Experienced in mobile API reverse engineering (Frida, Charles Proxy) and multi-LLM orchestration (LangChain, LangGraph, OpenAI, Agentic AI).
 \vspace{1pt}
 {\color{accentLine} \hrule}
 
@@ -258,8 +258,9 @@
   \headingIt{Python, LangChain, Groq, Mistral, ChromaDB, faster-whisper, HuggingFace}{}
   \vspace{-0.1em}
   \begin{resume_list}
-    \item Transcribes YouTube/local media via \textbf{faster-whisper} (INT8, CPU); summarizes long-form content using \textbf{map-reduce} over \textbf{LLaMA 3.3 70B} (Groq) and structured extraction via Mistral.
-    \item \textbf{RAG layer} over \textbf{ChromaDB} + HuggingFace embeddings (LangChain); outputs title, summary, action items, key decisions, and open questions per video.
+\item Transcribes and analyzes YouTube/local media using \textbf{agentic AI workflows}, \textbf{LLM-powered map-reduce summarization}, and \textbf{multi-model orchestration} (\textbf{GPT-4o}, \textbf{Claude 4}, \textbf{LLaMA 3.3 70B}) for long-context content processing.
+
+\item Implemented a production-grade \textbf{RAG architecture} with \textbf{LangGraph}, \textbf{vector search}, \textbf{hybrid retrieval}, and modern embedding models; automatically generates summaries, action items, decisions, insights, and follow-up tasks from video content.
   \end{resume_list}
 \vspace{-0.05em}
   \headingBf{E-Commerce Availability Analytics ETL Pipeline ~\normalfont\href{https://github.com/dheeraj-code1/product-availability-etl}{\faGithub}}{Mar 2025 -- Present}
@@ -267,7 +268,7 @@
   \headingIt{PySpark, GCS (Parquet), MySQL, Docker $|$ MfilterIt}{}
   \vspace{-0.1em}
   \begin{resume_list}
-    \item Built a \textbf{PySpark} ETL pipeline over \textbf{180 days} of GCS Parquet files and live MySQL records via JDBC; computed \textbf{8 analytical metrics} (OOS rate, availability gap, dark store gaps, per-SKU trends) across 4 rolling windows (daily/7d/30d/90d) per brand, containerized with \textbf{Docker} for reproducible deployment.
+    \item Engineered a \textbf{distributed PySpark ETL workflow} over \textbf{180 days} of data lake and transactional sources (GCS Parquet + MySQL); delivered \textbf{8 inventory analytics metrics} across daily/7d/30d/90d windows, optimized for large-scale aggregation and packaged using \textbf{Docker} for reproducible execution.
   \end{resume_list}
 \vspace{-0.1em}
   \headingBf{Weapon-Target Assignment Optimization}{October 2024 -- May 2025}
